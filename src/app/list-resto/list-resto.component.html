@@ -1,0 +1,29 @@
+<p>list-resto works!</p>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Email</th>
+        <th scope="col">Opration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection  let i=index">
+        <th>{{i+1}}</th>
+        <th>{{item.name}}</th>
+        <th>{{item.address}}</th>
+        <th>{{item.email}}</th>
+        <th  (click)="deleteData(item.id)"class="fa fa-trash" style="font-size:20px;color:red;">  </th>
+      </tr>
+      
+    </tbody>
+  </table>
+   <!--  <div class="row">
+    <pagination-controls (pageChange)="p = $event" class="float-right"></pagination-controls>
+
+    </div> 
+    //| paginate: { itemsPerPage: 4, currentPage: p }; -->
+
