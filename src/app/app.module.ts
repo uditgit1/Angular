@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import {HttpClientModule} from '@angular/common/http'
 import {ReactiveFormsModule , FormsModule} from '@angular/forms'
 import { NgxPaginationModule } from 'ngx-pagination';
+import { TemplateDrivenComponent } from './form/template-driven/template-driven.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ListRestoComponent,
     LoginComponent,
     RegisterComponent,
+    TemplateDrivenComponent,
    
   ],
   imports: [
